@@ -8,7 +8,6 @@ function NotFound() {
             <br />
             <h1>🤷🏻</h1>
         </div>
-
     );
 }
 
