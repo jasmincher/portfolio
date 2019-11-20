@@ -8,6 +8,8 @@ class Navbar extends React.Component{
         return (
             <div>
                 <NavLink exact to="/"> Home </NavLink>
+                <NavLink to="/projects"> Projects </NavLink>
+
             </div>
 
         )
