@@ -16,9 +16,12 @@ $color: rgb(201, 201, 201);
     background: $color;    
     color: $color;
     font-size: 12px !important;
-    
 
+}
 
+.close-btn:hover{
+    color:black;
+    background: $red;
 }
 
 
