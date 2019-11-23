@@ -3,11 +3,11 @@ $linear-background:  linear-gradient(rgb(186, 123, 175),rgb(196, 162, 190),rgb(2
 body {
     background: $linear-background;
     color: black !important;
+    overflow: hidden;
 }
 
 
 .App {
     text-align: center;
-    // height: 100vh;
   }
 
