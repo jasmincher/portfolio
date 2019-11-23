@@ -1,0 +1,30 @@
+$window-color: rgba(255, 255, 255, 0.386);
+
+.nav-container{
+    background: $window-color;
+    text-align: start;
+    padding: 0px 10px;
+    display: flex;
+}
+
+.inactive{
+    color: black;
+}
+
+.active{
+    color: black;
+    font-weight: 500;
+   
+
+}
+
+a{
+    padding: 5px 10px 5px 0;
+    color: black !important;
+}
+
+a:hover{
+    font-style: unset !important;
+    color: black !important;
+    text-decoration: none !important;
+}
