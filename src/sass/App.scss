@@ -1,11 +1,13 @@
 $linear-background:  linear-gradient(rgb(186, 123, 175),rgb(196, 162, 190),rgb(206, 189, 203)) fixed;
 
 body {
-    background: $linear-background
+    background: $linear-background;
+    color: black !important;
 }
 
 
 .App {
     text-align: center;
+    // height: 100vh;
   }
-  
+
