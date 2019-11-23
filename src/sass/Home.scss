@@ -1,4 +1,28 @@
+$red: rgb(194, 78, 78);
+$color: rgb(201, 201, 201);
+
 .home-container{
     height: 100vh;
  
 }
+
+
+.close-btn{
+    cursor: pointer;
+    position: absolute;
+    top: -16px !important;
+    right: 3px;
+    border-radius: 20px;
+    background: $color;    
+    color: $color;
+    font-size: 12px !important;
+    
+
+
+}
+
+
+.home-container .material-icons{
+    position: absolute !important;
+}
+
