@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from './Icon';
-import '../sass/Sections.scss'
+import '../sass/Section.scss'
 
 
 
