@@ -34,8 +34,7 @@ function Home() {
     if (showWindow == true && currentWindow != null) {
       return (
         <Window>
-
-          <button onClick={hideWindow}>Hide</button>
+          <i className="material-icons close-btn" onClick={hideWindow}>close</i>
           <Notes />
         </Window>
 
@@ -57,7 +56,7 @@ function Home() {
       {renderWindow()}
 
 
-      <div onClick={() => { (showWindow == true) ? hideWindow() : shouldShowWindow() }}>
+      <div onClick={() => { (showWindow == true) ? shouldShowWindow() : shouldShowWindow() }}> 
 
 
         <Section icons={Icons} onItemClick={shouldShowWindow} />
