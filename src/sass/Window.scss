@@ -1,6 +1,11 @@
 .window-container{
-    border: blue 2px solid;
     position: absolute;
     top: 60px;
-    left: 300px;
+    left: 330px;
+    border: rgb(120, 120, 120) 1px solid {
+        top: rgb(50, 50, 50) 20px solid;
+        radius: 5px;
+    }
+
+
 }
