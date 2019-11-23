@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-
+import Settings from './pages/Settings';
 
 
 function App() {
@@ -16,10 +16,11 @@ function App() {
 
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route exact path='/projects' component={Projects} />
+        <Route path='/settings' component={Settings} />
+
+        <Route path='/projects' component={Projects} />
         <Route component={NotFound} />
       </Switch>
-
 
     </div>
   );
