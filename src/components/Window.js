@@ -8,7 +8,7 @@ class Window extends React.Component {
         return (
 
             <Rnd>
-
+        
                 <div className="window-container">
                     {this.props.children} 
                 </div>
