@@ -3,8 +3,8 @@ import '../sass/Home.scss';
 import Window from '../components/Window';
 import Notes from '../components/Notes';
 import Section from '../components/Section';
-import { Icons } from '../assets/data/Data'
-
+import { Icons } from '../assets/data/Data';
+import Projects from '../components/Projects';
 
 function Home() {
 
@@ -35,7 +35,7 @@ function Home() {
       return (
         <Window>
           <i className="material-icons close-btn" onClick={hideWindow}>close</i>
-          <Notes />
+          <Projects />
         </Window>
 
 
