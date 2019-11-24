@@ -1,44 +1,52 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../sass/Home.scss';
 import Window from '../components/Window';
-import Notes from '../components/Notes';
 import Section from '../components/Section';
 import { Icons } from '../assets/data/Data';
-import Projects from '../components/Projects';
-
-function Home() {
-
-  const [showWindow, setShowWindow] = useState(0);
-  const [currentWindow, setCurrentWindow] = useState(null);
 
 
-  const shouldShowWindow = (window) => {
-    setShowWindow(!showWindow);
-    if (window != null) {
-      setCurrentWindow(!null)
-    }
+class Home extends React.Component {
 
-    console.log("did should show window")
+  constructor(props) {
+    super(props)
+    this.state = {
+      showWindow: 0,
+      currentWindow: null,
+    };
   }
 
 
-  const hideWindow = () => {
-    setShowWindow(false);
-    setCurrentWindow(null);
+  shouldShowWindow = (window) => {
+    this.setState({
+      showWindow: !this.state.showWindow
+    })
+
+    if (window != null) {
+      this.setState({
+        currentWindow: !null
+
+      })
+    }
+  }
+
+  hideWindow = () => {
+    this.setState({
+      showWindow: false,
+      currentWindow: null
+    })
     console.log("did hide window")
 
   }
 
 
-  const renderWindow = () => {
-    if (showWindow == true && currentWindow != null) {
+
+  renderWindow = () => {
+
+    if (this.state.showWindow == true && this.state.currentWindow != null) { //&& Icons[0].window == 'Projects'
       return (
         <Window>
-          <i className="material-icons close-btn" onClick={hideWindow}>close</i>
-          <Projects />
+          <i className="material-icons close-btn" onClick={this.hideWindow}>close</i>
         </Window>
-
-
 
       )
 
@@ -48,27 +56,26 @@ function Home() {
 
 
 
+  render() {
 
-  return (
-    <div className="home-container">
-
-
-      {renderWindow()}
+    return (
+      <div className="home-container">
 
 
-      <div onClick={() => { (showWindow == true) ? shouldShowWindow() : shouldShowWindow() }}> 
+        {this.renderWindow()}
 
 
-        <Section icons={Icons} onItemClick={shouldShowWindow} />
+        <div onClick={() => { (this.state.showWindow == true) ? this.hideWindow() : this.shouldShowWindow() }}>
+
+
+          <Section icons={Icons} onItemClick={this.shouldShowWindow} />
+
+        </div>
 
       </div>
 
-
-
-
-    </div>
-
-  );
+    );
+  }
 }
 
 export default Home;
