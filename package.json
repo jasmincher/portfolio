@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "git": "^0.1.5",
     "grommet": "^2.8.0",
     "grommet-icons": "^4.4.0",
     "node-sass": "^4.13.0",
