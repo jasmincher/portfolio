@@ -1,8 +1,8 @@
 import React from 'react';
 import '../sass/Icon.scss';
 
-
 function Icon(props) {
+  
     return (
         <div className="icon-container" onClick={props.onIconClick}>
             <img src={props.icon} className="icon-img" />
@@ -11,4 +11,4 @@ function Icon(props) {
     )
 }
 
-export default Icon;
+export default Icon; 
