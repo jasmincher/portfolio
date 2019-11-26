@@ -9,7 +9,7 @@ export const Icons =
     {
         title: 'Notes',
         icon: notes,
-        window: 'Notes'
+        window: 'Notes',
 
     },
     
@@ -23,22 +23,20 @@ export const Icons =
     {
         title: 'Projects',
         icon: folder,
-        window: 'Projects'
+        window: 'Projects',
 
     },
     
     {
         title: 'Pictures',
         icon: pics,
-        window: 'Notes'
-
+        window: 'Notes',
     },
 
     {
         title: 'Soemthing',
         icon: notes,
-        window: 'Notes'
-
+        window: 'Notes',
     }
 ];
 
