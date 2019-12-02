@@ -9,34 +9,34 @@ export const Icons =
     {
         title: 'Notes',
         icon: notes,
-        window: 'Notes',
+        component: 'Notes',
 
     },
     
     {
         title: 'Mail',
         icon: email,
-        window: 'Notes',
+        component: 'Notes',
 
     },
     
     {
         title: 'Projects',
         icon: folder,
-        window: 'Projects',
+        component: 'Projects',
 
     },
     
     {
         title: 'Pictures',
         icon: pics,
-        window: 'Notes',
+        component: 'Notes',
     },
 
     {
         title: 'Soemthing',
         icon: notes,
-        window: 'Notes',
+        component: 'Notes',
     }
 ];
 
