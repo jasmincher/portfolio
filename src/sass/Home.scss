@@ -7,21 +7,29 @@ $color: rgb(201, 201, 201);
 }
 
 
+.close-btn-container{
+    background: rgb(226, 229, 235);
+    height: 25px;
+    border: {
+        bottom-left-radius: 0px !important;
+        bottom-right-radius: 0px !important;
+    }
+}
+
 .close-btn{
     cursor: pointer;
     position: absolute;
-    top: -16px !important;
-    right: 3px;
-    border-radius: 20px;
-    background: $color;    
-    color: $color;
+    top: 7px !important;
+    left: 8px;
+    border-radius: 100px;
+    background: $red;    
+    color: $red;
     font-size: 12px !important;
-
+  
 }
 
 .close-btn:hover{
     color:black;
-    background: $red;
 }
 
 

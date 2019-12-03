@@ -1,6 +1,7 @@
 import React from 'react';
 import '../sass/Window.scss';
-import { Rnd } from 'react-rnd';
+import Draggable from 'react-draggable';
+
 
 class Window extends React.Component{
 
@@ -8,11 +9,11 @@ class Window extends React.Component{
 
         return (
 
-            <Rnd>
+            <Draggable>
                 <div className="window-container">
                     {this.props.children}
                 </div>
-            </Rnd>
+            </Draggable>
         )
     }
 }

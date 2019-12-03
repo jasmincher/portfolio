@@ -18,14 +18,14 @@ class Home extends React.Component {
       info: null
     };
   }
-  
-  
+
+
   //shows window with corresponding component 
   showWindow = (data) => {
     this.setState({
-        show: true,
-        info: data.component
-      });
+      show: true,
+      info: data.component
+    });
   }
 
 
@@ -58,7 +58,9 @@ class Home extends React.Component {
 
       return (
         <Window>
-          <i className="material-icons close-btn" onClick={this.hideWindow}>close</i>
+          <div className="close-btn-container">
+            <i className="material-icons close-btn" onClick={this.hideWindow}>close</i>
+          </div>
           {this.renderComponent()}
         </Window>
       )
@@ -68,7 +70,7 @@ class Home extends React.Component {
   }
 
   render() {
-    
+
     return (
       <div className="home-container">
         {this.renderWindow()}
