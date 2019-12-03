@@ -1,50 +1,94 @@
 import React from 'react';
-import '../sass/Projects.scss'
+import '../sass/Settings.scss'
+import variables from '../sass/Settings.scss'
+
+
+const gradients = [{color:  variables.defaultcolor }, {color: variables.gradient1}, {color: variables.gradient2}, {color: variables.gradient3}, {color: variables.gradient4}];
 
 
 class Settings extends React.Component {
-
+    constructor(props) {
+        super(props)
+        this.state = {
+            color: variables.defaultcolor,
+            show: true
+        };
+    }
 
     changeColor = (color) => {
-        switch (color) {
-            case 'blue':
-                document.body.style.background = "blue";
-                break;
-            case 'red':
-                document.body.style.background = "red";
-                break;
-            default:
-                document.body.style.background = "yellow";
-                break;
+        this.setState({
+            color: color
+        })
+
+
+    }
+
+
+
+    toggleOptions = (id) => {
+        this.setState({
+            show: !this.state.show
+        })
+
+        if (this.state.show == true) {
+            document.getElementById(id).style.display = "grid";
+
+        } else {
+            document.getElementById(id).style.display = "none";
+
+
         }
     }
 
+
+
+    renderGradients = () => {
+        console.log(variables)
+        return (
+            <div className="colors-option" id="colors-option">
+
+
+                {gradients.map(i => (
+                    <div style={{ background: i.color }} onClick={() => this.changeColor(i.color)}></div>
+
+
+                ))}
+
+                {/*  before
+                <div style={{ background: variables.defaultcolor }} onClick={() => this.changeColor(variables.defaultcolor)}></div>
+                <div style={{ background: variables.gradient1 }} onClick={() => this.changeColor(variables.gradient1)}></div>
+                <div style={{ background: variables.gradient2 }} onClick={() => this.changeColor(variables.gradient2)}></div>
+                <div style={{ background: variables.gradient3 }} onClick={() => this.changeColor(variables.gradient3)}></div>
+                <div style={{ background: variables.gradient4 }} onClick={() => this.changeColor(variables.gradient4)}></div> */}
+            </div>
+        )
+    }
 
     render() {
 
         return (
 
             <div className="settings-container">
+
+                <div className="desktop-preview" style={{ background: this.state.color }}></div>
                 <h6>Desktop</h6>
-                
-                <div className="desktop-preview"></div>
-                
-                <ul>
 
-                    <li onClick={() => this.changeColor('blue')}>change to blue 
-                    <div className="color-preview"></div>
-                    </li>
-                    
-                    <li onClick={() => this.changeColor('red')}> change to red 
-                    <div className="color-preview"></div>
-                    </li>
+                <div className="options">
+                    <ul>
+                        <li onClick={() => this.toggleOptions('colors-option')}>Gradients</li>
+                        {this.renderGradients()}
 
-                    <li onClick={() => this.changeColor('idk')}> change to another color
-                    <div className="color-preview"></div>
-                    </li>
+                        <li>Colors</li>
+
+                        <li>Images</li>
 
 
-                </ul>
+                    </ul>
+                </div>
+
+
+                <button className="apply-btn" onClick={() => document.body.style.background = this.state.color}>Apply Color</button>
+
             </div>
 
         )
