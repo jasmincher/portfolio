@@ -3,9 +3,10 @@ import '../sass/Home.scss';
 import Window from '../components/Window';
 import Section from '../components/Section';
 import { Icons } from '../assets/data/Data';
-import Notes from '../components/Notes'
-import Projects from '../components/Projects'
-import Settings from '../components/Settings'
+import Notes from '../components/Notes';
+import Projects from '../components/Projects';
+import Settings from '../components/Settings';
+import Mail from '../components/Mail';
 
 
 
@@ -39,8 +40,8 @@ class Home extends React.Component {
   //conditionally renders component based on component name in data
   renderComponent = () => {
     switch (this.state.info) {
-      case 'Notes':
-        return <Notes />
+      case 'Mail':
+        return <Mail />
       case 'Projects':
         return <Projects />
       case 'Settings':
