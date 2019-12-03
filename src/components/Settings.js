@@ -3,7 +3,7 @@ import '../sass/Settings.scss'
 import variables from '../sass/Settings.scss'
 
 
-const gradients = [{color:  variables.defaultcolor }, {color: variables.gradient1}, {color: variables.gradient2}, {color: variables.gradient3}, {color: variables.gradient4}];
+const gradients = [{ color: variables.defaultcolor }, { color: variables.gradient1 }, { color: variables.gradient2 }, { color: variables.gradient3 }, { color: variables.gradient4 }];
 
 
 class Settings extends React.Component {
@@ -19,10 +19,7 @@ class Settings extends React.Component {
         this.setState({
             color: color
         })
-
-
     }
-
 
 
     toggleOptions = (id) => {
@@ -35,8 +32,6 @@ class Settings extends React.Component {
 
         } else {
             document.getElementById(id).style.display = "none";
-
-
         }
     }
 
@@ -46,26 +41,15 @@ class Settings extends React.Component {
         console.log(variables)
         return (
             <div className="colors-option" id="colors-option">
-
-
                 {gradients.map(i => (
-                    <div style={{ background: i.color }} onClick={() => this.changeColor(i.color)}></div>
+                    <div style={{ background: i.color }} onClick={() => this.changeColor(i.color)}></div>))}
 
-
-                ))}
-
-                {/*  before
-                <div style={{ background: variables.defaultcolor }} onClick={() => this.changeColor(variables.defaultcolor)}></div>
-                <div style={{ background: variables.gradient1 }} onClick={() => this.changeColor(variables.gradient1)}></div>
-                <div style={{ background: variables.gradient2 }} onClick={() => this.changeColor(variables.gradient2)}></div>
-                <div style={{ background: variables.gradient3 }} onClick={() => this.changeColor(variables.gradient3)}></div>
-                <div style={{ background: variables.gradient4 }} onClick={() => this.changeColor(variables.gradient4)}></div> */}
             </div>
         )
     }
 
-    render() {
 
+    render() {
         return (
 
             <div className="settings-container">
@@ -81,7 +65,6 @@ class Settings extends React.Component {
                         <li>Colors</li>
 
                         <li>Images</li>
-
 
                     </ul>
                 </div>
