@@ -5,59 +5,56 @@ import Section from '../components/Section';
 import { Icons } from '../assets/data/Data';
 import Notes from '../components/Notes'
 import Projects from '../components/Projects'
+import Settings from '../components/Settings'
+
+
 
 
 class Home extends React.Component {
-
   constructor(props) {
     super(props)
     this.state = {
-      showWindow: 0,
-      currentWindow: null,
+      show: false,
+      info: null
     };
   }
-
-
-  shouldShowWindow = (data) => {
+  
+  
+  //shows window with corresponding component 
+  showWindow = (data) => {
     this.setState({
-      showWindow: !this.state.showWindow
-    })
-
-    if (data != null) {
-      this.setState({
-        currentWindow: data.window
-
-      })
-    }
+        show: true,
+        info: data.component
+      });
   }
 
 
+
+  //hides window 
   hideWindow = () => {
-    this.setState({
-      showWindow: false,
-      currentWindow: null
-    })
-
+    this.setState({ show: false })
   }
 
 
+  //conditionally renders component based on component name in data
   renderComponent = () => {
-    switch (this.state.currentWindow) {
+    switch (this.state.info) {
       case 'Notes':
         return <Notes />
       case 'Projects':
         return <Projects />
+      case 'Settings':
+        return <Settings />
       default:
         return <Notes />
     }
 
   }
 
-
-
+  //renders the window component with the conditionally rendered component with a close button
   renderWindow = () => {
 
-    if (this.state.showWindow == true && this.state.currentWindow != null) {
+    if (this.state.show == true) {
 
       return (
         <Window>
@@ -70,21 +67,18 @@ class Home extends React.Component {
 
   }
 
-  
   render() {
-
+    
     return (
       <div className="home-container">
         {this.renderWindow()}
 
-        <div onClick={() => { (this.state.showWindow == true) ? this.hideWindow() : this.shouldShowWindow() }}>
-          <Section icons={Icons} idk={Icons} onItemClick={this.shouldShowWindow} />
-        </div>
+        <Section icons={Icons} onItemClick={this.showWindow} />
 
       </div>
-
-    );
+    )
   }
 }
+
 
 export default Home;
