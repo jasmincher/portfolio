@@ -17,7 +17,7 @@ export const Icons =
     {
         title: 'Mail',
         icon: email,
-        component: 'Notes',
+        component: 'Mail',
 
     },
     
