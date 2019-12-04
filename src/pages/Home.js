@@ -58,7 +58,7 @@ class Home extends React.Component {
     if (this.state.show == true) {
 
       return (
-        <Window>
+        <Window handle=".close-btn-container">
           <div className="close-btn-container">
             <i className="material-icons close-btn" onClick={this.hideWindow}>close</i>
           </div>

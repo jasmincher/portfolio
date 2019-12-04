@@ -3,13 +3,13 @@ import '../sass/Window.scss';
 import Draggable from 'react-draggable';
 
 
-class Window extends React.Component{
+class Window extends React.Component {
 
     render() {
 
         return (
 
-            <Draggable>
+            <Draggable handle={this.props.handle}>
                 <div className="window-container">
                     {this.props.children}
                 </div>
