@@ -24,8 +24,6 @@ const isFormValid = ({ errors, ...inputs }) => {
 };
 
 
-
-
 class Mail extends React.Component {
     constructor(props) {
         super(props);
@@ -48,45 +46,27 @@ class Mail extends React.Component {
         e.preventDefault();
 
         if (isFormValid(this.state)) {
-            this.setState({
-                allFields: "green 2px solid"
-            })
-
-            console.log(`
-        --Form Submission Successful--
-
-        Name: ${this.state.name}
-        Email: ${this.state.email}
-        Message: ${this.state.message}
-
-            `);
-
+            this.setState({ allFields: "green 2px solid" })
+            console.log("Form submission successful!");
 
         } else {
-            console.log(this.state.allFields + "this is all fields")
-
-            this.setState({
-                allFields: "1px red solid"
-             
-            })
-            console.error("Form invalid");
+            this.setState({ allFields: "1px red solid" })
+            console.error("Form submission unsuccessful");
         }
     };
 
 
-
-
-    handleChange = (e) => {  
+    handleChange = (e) => {
         e.preventDefault();
         const { name, value } = e.target;
         let errors = { ...this.state.errors };
 
         switch (name) {
             case "name":
-                errors.name = value.length < 2 ? "Name is too short" : "" ;
+                errors.name = value.length < 2 ? "Name is too short" : "";
                 break;
             case "email":
-                errors.email = emailRegex.test(value) ? ""  : "Invalid email" ;
+                errors.email = emailRegex.test(value) ? "" : "Invalid email";
                 break;
             case "message":
                 errors.message = value.length < 6 ? "Message must be longer" : "";
@@ -95,9 +75,8 @@ class Mail extends React.Component {
                 break;
         }
 
-        this.setState({ errors, [name]: value, allFields: "black"});
+        this.setState({ errors, [name]: value, allFields: "black" });
     };
-
 
 
     render() {
@@ -106,9 +85,7 @@ class Mail extends React.Component {
 
         return (
             <div className="form-container">
-
                 <form action="https://formspree.io/mvogqlpv" method="POST" onSubmit={this.handleSubmit} className="mail-form" noValidate>
-
 
                     <label>Name</label>
                     <input
@@ -119,6 +96,7 @@ class Mail extends React.Component {
                         onChange={this.handleChange}
                         style={{ border: this.state.allFields }}
                     />
+
 
                     <label>Email</label>
                     <input
@@ -143,17 +121,12 @@ class Mail extends React.Component {
 
                     </textarea>
 
-
                     <button type="submit">Submit</button>
 
                 </form>
             </div>
         );
     }
-
-
-
-
 }
 
 export default Mail;
