@@ -28,7 +28,7 @@ class Mail extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            allFields: null,
+            success: [null, null],
             name: "",
             email: "",
             message: "",
@@ -46,12 +46,14 @@ class Mail extends React.Component {
         e.preventDefault();
 
         if (isFormValid(this.state)) {
-            this.setState({ allFields: "green 2px solid" })
+            e.target.reset();
+            this.setState({ success: ['Sent email', true] })
             console.log("Form submission successful!");
 
         } else {
-            this.setState({ allFields: "1px red solid" })
+            this.setState({ success: ['Missing Fields', false] })
             console.error("Form submission unsuccessful");
+            //find errors and style them
         }
     };
 
@@ -75,7 +77,7 @@ class Mail extends React.Component {
                 break;
         }
 
-        this.setState({ errors, [name]: value, allFields: "black" });
+        this.setState({ errors, [name]: value, success: [null, null] });
     };
 
 
@@ -85,6 +87,13 @@ class Mail extends React.Component {
 
         return (
             <div className="form-container">
+
+
+                <h6>Want to email me?</h6>
+
+                <label style={{ color: this.state.success[1] == true ? 'green' : 'red' }}> {this.state.success[0]}
+                </label>
+
                 <form action="https://formspree.io/mvogqlpv" method="POST" onSubmit={this.handleSubmit} className="mail-form" noValidate>
 
                     <label>Name</label>
@@ -94,7 +103,6 @@ class Mail extends React.Component {
                         name="name"
                         noValidate
                         onChange={this.handleChange}
-                        style={{ border: this.state.allFields }}
                     />
 
 
@@ -105,7 +113,6 @@ class Mail extends React.Component {
                         name="email"
                         noValidate
                         onChange={this.handleChange}
-                        style={{ border: this.state.allFields }}
                     />
 
 
@@ -116,7 +123,6 @@ class Mail extends React.Component {
                         name="message"
                         noValidate
                         onChange={this.handleChange}
-                        style={{ border: this.state.allFields }}
                     >
 
                     </textarea>
