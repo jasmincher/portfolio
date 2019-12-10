@@ -1,0 +1,61 @@
+$input-background: rgb(242, 242, 242);
+
+.form-container {
+  text-align: left;
+  padding: 10px;
+}
+
+.form-container h6 {
+  text-align: center;
+}
+
+.form-container label,
+.form-container input,
+.form-container textarea {
+  font-size: 12px;
+}
+
+.form-container label {
+  margin: 0;
+}
+
+.mail-form {
+  width: 200px;
+}
+
+input {
+  width: 200px !important;
+  border: none;
+  background: $input-background;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none !important;
+}
+
+.form-textarea {
+  background: $input-background;
+  height: 50px;
+  vertical-align: top;
+}
+
+.error {
+  border: none;
+  border: 1px red solid;
+}
+
+.field-status {
+  color: red;
+  font-size: 10px;
+}
+
+.form-btn{
+    margin-top: 10px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid rgb(220, 220, 220);
+}
