@@ -1,12 +1,14 @@
+//color variables
 $red: rgb(194, 78, 78);
 $color: rgb(201, 201, 201);
 
+//stles home page container
 .home-container{
     height: 100vh;
  
 }
 
-
+//styles div containing only the close button
 .close-btn-container{
     background: rgb(226, 229, 235);
     height: 25px;
@@ -16,9 +18,10 @@ $color: rgb(201, 201, 201);
     }
 }
 
+//styles close button
 .close-btn{
     cursor: pointer;
-    position: absolute;
+    position: absolute !important;
     top: 7px !important;
     left: 8px;
     border-radius: 100px;
@@ -28,12 +31,9 @@ $color: rgb(201, 201, 201);
   
 }
 
+//styles close button when you hover over it
 .close-btn:hover{
     color:black;
 }
 
-
-.home-container .material-icons{
-    position: absolute !important;
-}
 
