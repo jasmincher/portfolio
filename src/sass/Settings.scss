@@ -1,3 +1,4 @@
+//Gradient colors
 $default-color: linear-gradient(rgb(186, 123, 175),rgb(196, 162, 190),rgb(206, 189, 203));
 $gradient1: linear-gradient(rgb(172, 141, 148),rgb(177, 163, 168),rgb(221, 221, 223));
 $gradient2: linear-gradient(rgb(93, 179, 181),rgb(153, 177, 153),rgb(162, 162, 164));
@@ -5,7 +6,7 @@ $gradient3: linear-gradient(rgb(44, 169, 227),rgb(140, 131, 227),rgb(187, 185, 2
 $gradient4: linear-gradient(rgb(210, 188, 208),rgb(174, 172, 187),rgb(170, 165, 222));
 
 
-
+//exporting variables
 :export {
     defaultcolor: $default-color;
     gradient1: $gradient1;
@@ -14,12 +15,15 @@ $gradient4: linear-gradient(rgb(210, 188, 208),rgb(174, 172, 187),rgb(170, 165, 
     gradient4: $gradient4;
 }
 
+
+//styles the whole container for settings
 .settings-container{
     width: 250px;
     height: 300px;
 }
 
 
+//styles the div that previews color before changing it 
 .desktop-preview{
     width: 150px;
     height: 100px;
@@ -27,7 +31,7 @@ $gradient4: linear-gradient(rgb(210, 188, 208),rgb(174, 172, 187),rgb(170, 165, 
     margin: 10px auto;
 }
 
-
+//styles div containing all options for background change
 .options{
     margin-top: 20px;
     height: 100px;
@@ -39,27 +43,34 @@ $gradient4: linear-gradient(rgb(210, 188, 208),rgb(174, 172, 187),rgb(170, 165, 
     border: 1px solid black;
 }
 
+//styles all list items inside of div with classname of options
 .options li {
     padding: 5px 10px;
 }
 
+//styles all i tag inside of div with classname of options
+.options i {
+    top: unset !important;
+    font-size: 20px !important;
+}
 
+//styles the background options 
 .colors-option{
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     justify-items: center;
     display: none;
 }
 
+//styles all div elements that are children of classname of colors-option
 .colors-option > div{
     width: 40px;
-    height: 40px;
+    height: 30px;
     border: rgb(151, 151, 151) 1px solid;
-    border-radius: 100px;
     margin: 5px;
     
 }
 
-
+//styles button that applies background color
 .apply-btn{
     bottom: 0;
     position: absolute;
