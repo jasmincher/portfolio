@@ -1,82 +1,66 @@
-import React from 'react';
-import '../sass/Settings.scss'
-import variables from '../sass/Settings.scss'
-
-
-const gradients = [{ color: variables.defaultcolor }, { color: variables.gradient1 }, { color: variables.gradient2 }, { color: variables.gradient3 }, { color: variables.gradient4 }];
-
+import React from "react";
+import "../sass/Settings.scss";
+import { gradients, colors } from "../assets/data/Colors";
+import Dropwdown from "./Dropdown";
 
 class Settings extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            color: variables.defaultcolor,
-            show: true
-        };
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      color: gradients[0].color
+    };
+  }
 
-    changeColor = (color) => {
-        this.setState({
-            color: color
-        })
-    }
+  //sets state to change color
+  changeColor = color => {
+    this.setState({
+      color: color
+    });
+  };
 
+  //condtionally render and map through backgrounds from object
+  renderBackgrounds = backgrounds => {
+    return backgrounds.map(i => (
+      <div
+        style={{ background: i.color }}
+        onClick={() => this.changeColor(i.color)}
+      ></div>
+    ));
+  };
 
-    toggleOptions = (id) => {
-        this.setState({
-            show: !this.state.show
-        })
+  render() {
+    return (
+      <div className="settings-container">
+        {/* displays desktop preview and color is changed here before changing the body background */}
+        <div
+          className="desktop-preview"
+          style={{ background: this.state.color }}
+        ></div>
+        <h6>Desktop</h6>
 
-        if (this.state.show == true) {
-            document.getElementById(id).style.display = "grid";
+        {/* displays background options, in a dropdown menu  */}
+        <div className="options">
+          <ul>
+            <Dropwdown name="Gradients">
+              {this.renderBackgrounds(gradients)}
+            </Dropwdown>
+            
+            <Dropwdown name="Solid Colors">
+              {this.renderBackgrounds(colors)}
+            </Dropwdown>
+            <li>Images</li>
+          </ul>
+        </div>
 
-        } else {
-            document.getElementById(id).style.display = "none";
-        }
-    }
-
-
-
-    renderGradients = () => {
-        console.log(variables)
-        return (
-            <div className="colors-option" id="colors-option">
-                {gradients.map(i => (
-                    <div style={{ background: i.color }} onClick={() => this.changeColor(i.color)}></div>))}
-
-            </div>
-        )
-    }
-
-
-    render() {
-        return (
-
-            <div className="settings-container">
-
-                <div className="desktop-preview" style={{ background: this.state.color }}></div>
-                <h6>Desktop</h6>
-
-                <div className="options">
-                    <ul>
-                        <li onClick={() => this.toggleOptions('colors-option')}>Gradients</li>
-                        {this.renderGradients()}
-
-                        <li>Colors</li>
-
-                        <li>Images</li>
-
-                    </ul>
-                </div>
-
-
-                <button className="apply-btn" onClick={() => document.body.style.background = this.state.color}>Apply Color</button>
-
-            </div>
-
-        )
-    }
+        <button
+          className="apply-btn"
+          onClick={() => (document.body.style.background = this.state.color)}
+        >
+          Apply Color
+        </button>
+      </div>
+    );
+  }
 }
-
 
 export default Settings;
