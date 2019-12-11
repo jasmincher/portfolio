@@ -6,13 +6,28 @@ $gradient3: linear-gradient(rgb(44, 169, 227),rgb(140, 131, 227),rgb(187, 185, 2
 $gradient4: linear-gradient(rgb(210, 188, 208),rgb(174, 172, 187),rgb(170, 165, 222));
 
 
+
+//solid colors 
+$pink: rgb(223, 187, 218);
+$blue: rgb(136, 163, 186);
+$purple:rgb(156, 128, 171);
+$green: rgb(173, 203, 165);
+
+
 //exporting variables
 :export {
+    //exporting gradients
     defaultcolor: $default-color;
     gradient1: $gradient1;
     gradient2: $gradient2;
     gradient3: $gradient3;
     gradient4: $gradient4;
+
+    //exporting solid colors
+    pink: $pink;
+    blue: $blue;
+    purple: $purple;
+    green: $green;
 }
 
 
@@ -31,8 +46,8 @@ $gradient4: linear-gradient(rgb(210, 188, 208),rgb(174, 172, 187),rgb(170, 165, 
     margin: 10px auto;
 }
 
-//styles div containing all options for background change
-.options{
+//styles div containing all dropdown-list for background change
+.dropdown-list{
     margin-top: 20px;
     height: 100px;
     width: 230px;
@@ -43,26 +58,30 @@ $gradient4: linear-gradient(rgb(210, 188, 208),rgb(174, 172, 187),rgb(170, 165, 
     border: 1px solid black;
 }
 
-//styles all list items inside of div with classname of options
-.options li {
+//styles all children divs inside of div with classname of dropdown-list
+.dropdown-list > div {
     padding: 5px 10px;
 }
 
-//styles all i tag inside of div with classname of options
-.options i {
-    top: unset !important;
+//styles all i tag inside of div with classname of dropdown-list
+.dropdown-list i {
     font-size: 20px !important;
 }
 
+//styles all i tags inside of div with classname of dropdown-list on hover
+.dropdown-list i:hover {
+    cursor: pointer;
+}
+
 //styles the background options 
-.colors-option{
+.background-options{
     grid-template-columns: auto auto auto auto;
     justify-items: center;
     display: none;
 }
 
-//styles all div elements that are children of classname of colors-option
-.colors-option > div{
+//styles all div elements that are children of classname of background-options
+.background-options > div{
     width: 40px;
     height: 30px;
     border: rgb(151, 151, 151) 1px solid;

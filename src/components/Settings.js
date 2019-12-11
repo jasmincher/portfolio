@@ -39,17 +39,15 @@ class Settings extends React.Component {
         <h6>Desktop</h6>
 
         {/* displays background options, in a dropdown menu  */}
-        <div className="options">
-          <div>
-            <Dropwdown name="Gradients">
-              {this.renderBackgrounds(gradients)}
-            </Dropwdown>
+        <div className="dropdown-list">
+          <Dropwdown name="Gradients">
+            {this.renderBackgrounds(gradients)}
+          </Dropwdown>
 
-            <Dropwdown name="Solid Colors">
-              {this.renderBackgrounds(colors)}
-            </Dropwdown>
-            {/* images */}
-          </div>
+          <Dropwdown name="Solid Colors">
+            {this.renderBackgrounds(colors)}
+          </Dropwdown>
+          {/* images */}
         </div>
 
         <button

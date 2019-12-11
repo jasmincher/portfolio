@@ -25,7 +25,7 @@ class Dropwdown extends Component {
     const arrow = isOpen ? "keyboard_arrow_up" : "keyboard_arrow_down";
 
     return (
-      <div className="Dropwdown">
+      <div className="dropdown-item">
         {/* onclick changes the direction of the arrow */}
         <div onClick={this.toggleOptions}>
           {name}
