@@ -11,7 +11,7 @@ class Dropwdown extends Component {
     this.toggleOptions = this.toggleOptions.bind(this);
   }
 
-  //changes state to true and false
+  //changes previous state to true or false
   toggleOptions() {
     this.setState(({ isOpen }) => ({
       isOpen: !isOpen
@@ -31,7 +31,7 @@ class Dropwdown extends Component {
           {name}
           <i className="material-icons"> {arrow} </i>
         </div>
-        <div className="colors-option" style={{ display }}>
+        <div className="background-options" style={{ display }}>
           {children}
         </div>
       </div>
