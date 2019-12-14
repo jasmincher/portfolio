@@ -7,16 +7,27 @@ class Settings extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: gradients[0].color
+      color: ''
     };
+  }
+
+  //sets color for preview window
+  componentDidMount() {
+    const color = localStorage.getItem("color") || gradients[0].color;
+    this.setState({ color });
   }
 
   //sets state to change color
   changeColor = color => {
-    this.setState({
-      color: color
-    });
+    this.setState({ color: color });
+    // localStorage.setItem('color', this.state.color);
   };
+
+  changeBackground() {
+    const { color } = this.state;
+    localStorage.setItem("color", color);
+    document.body.style.background = color;
+  }
 
   //condtionally render and map through backgrounds from object
   renderBackgrounds = backgrounds => {
@@ -36,7 +47,7 @@ class Settings extends React.Component {
           className="desktop-preview"
           style={{ background: this.state.color }}
         ></div>
-        <h6>Desktop</h6>
+        <p style={{ fontSize: "12px", marginBottom: "5px" }}>Desktop</p>
 
         {/* displays background options, in a dropdown menu  */}
         <div className="dropdown-list">
@@ -52,7 +63,7 @@ class Settings extends React.Component {
 
         <button
           className="apply-btn"
-          onClick={() => (document.body.style.background = this.state.color)}
+          onClick={() => this.changeBackground()}
         >
           Apply Color
         </button>
