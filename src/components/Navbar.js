@@ -8,7 +8,7 @@ class Navbar extends React.Component {
   
   render() {
     const { location } = this.props;
-    const navbarDisplay = location.pathname === '/' ? {display: 'flex' } : { display: 'none' }
+    const navbarDisplay = location.pathname === '/portfolio' ? {display: 'flex' } : { display: 'none' }
 
     console.log(navbarDisplay)
     return (
