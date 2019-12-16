@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.fb2f3f1c.chunk.css",
+    "main.js": "/portfolio/static/js/main.b913ce06.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.b913ce06.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.4fc83baf.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.4fc83baf.js.map",
+    "static/css/2.97089d65.chunk.css": "/portfolio/static/css/2.97089d65.chunk.css",
+    "static/js/2.b2c0841d.chunk.js": "/portfolio/static/js/2.b2c0841d.chunk.js",
+    "static/js/2.b2c0841d.chunk.js.map": "/portfolio/static/js/2.b2c0841d.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.cce274f9b08d07ec396bb5479d24f841.js": "/portfolio/precache-manifest.cce274f9b08d07ec396bb5479d24f841.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.97089d65.chunk.css.map": "/portfolio/static/css/2.97089d65.chunk.css.map",
+    "static/css/main.fb2f3f1c.chunk.css.map": "/portfolio/static/css/main.fb2f3f1c.chunk.css.map",
+    "static/media/About.jpeg": "/portfolio/static/media/About.afdc7112.jpeg",
+    "static/media/Jasmin Hernandez - Resume.pdf": "/portfolio/static/media/Jasmin Hernandez - Resume.2e725282.pdf",
+    "static/media/Resume.png": "/portfolio/static/media/Resume.e005dae1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4fc83baf.js",
+    "static/css/2.97089d65.chunk.css",
+    "static/js/2.b2c0841d.chunk.js",
+    "static/css/main.fb2f3f1c.chunk.css",
+    "static/js/main.b913ce06.chunk.js"
+  ]
+}
