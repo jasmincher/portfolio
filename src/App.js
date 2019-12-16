@@ -1,24 +1,19 @@
-import React from 'react';
-import './sass/App.scss';
-import { Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import NotFound from './pages/NotFound';
-import Home from './pages/Home';
-// import Settings from './pages/Settings';
-
+import React from "react";
+import "./sass/App.scss";
+import { Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import NotFound from "./pages/NotFound";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-
       <Navbar />
 
       <Switch>
-        <Route exact path='/' component={Home} />
-        {/* <Route path='/settings' component={Settings} /> */}
+        <Route exact path="/" component={Home} />
         <Route component={NotFound} />
       </Switch>
-
     </div>
   );
 }
