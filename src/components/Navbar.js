@@ -7,12 +7,11 @@ import { withRouter } from 'react-router'
 class Navbar extends React.Component {
   
   render() {
-    const { location } = this.props;
-    const navbarDisplay = location.pathname === '/portfolio' ? {display: 'flex' } : { display: 'none' }
+    // const { location } = this.props;
+    // const navbarDisplay = location.pathname === '/portfolio' ? {display: 'flex' } : { display: 'none' }
 
-    console.log(navbarDisplay)
     return (
-      <div className="nav-container" style={navbarDisplay}>
+      <div className="nav-container" style={{display: 'flex'}}>
           <i className="material-icons" style={{ fontSize: '1.3rem', alignSelf: 'center'}}>
             home
           </i>
@@ -29,4 +28,5 @@ class Navbar extends React.Component {
   }
 }
 
-export default withRouter(Navbar);
+export default Navbar;
+// export default withRouter(Navbar);
