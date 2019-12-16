@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "../sass/Window.scss";
 import Draggable from "react-draggable";
 
