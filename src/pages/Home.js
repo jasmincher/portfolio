@@ -1,12 +1,14 @@
-import React from "react";
-import "../sass/Home.scss";
-import Window from "../components/Window";
-import Section from "../components/Section";
-import { Icons } from "../assets/data/Data";
-import Notes from "../components/Notes";
-import Projects from "../components/Projects";
-import Settings from "../components/Settings";
-import Mail from "../components/Mail";
+import React from 'react';
+import '../sass/Home.scss';
+import Window from '../components/Window';
+import Section from '../components/Section';
+import { Icons } from '../assets/data/Data';
+import Notes from '../components/Notes';
+import Projects from '../components/Projects';
+import Settings from '../components/Settings';
+import Mail from '../components/Mail';
+import Resume from '../components/Resume';
+import About from '../components/About';
 import { gradients } from "../assets/data/Colors"
 
 class Home extends React.Component {
@@ -50,6 +52,10 @@ class Home extends React.Component {
         return <Projects />;
       case "Settings":
         return <Settings />;
+      case "Resume":
+        return <Resume />;
+      case "About":
+        return <About />;
       default:
         return <Notes />;
     }
