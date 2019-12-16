@@ -1,14 +1,18 @@
-$linear-background:  linear-gradient(rgb(186, 123, 175),rgb(196, 162, 190),rgb(206, 189, 203)) fixed;
+$linear-background: linear-gradient(
+    rgb(186, 123, 175),
+    rgb(196, 162, 190),
+    rgb(206, 189, 203)
+  )
+  fixed;
 
 body {
-    // background: $linear-background;
-    color: black !important;
-    overflow: hidden;
-    
+  color: black !important;
+  overflow: hidden;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
-
 .App {
-    text-align: center;
-  }
-
+  text-align: center;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import "../sass/Settings.scss";
-import { gradients, colors } from "../assets/data/Colors";
+import { gradients, colors, images } from "../assets/data/Colors";
 import Dropwdown from "./Dropdown";
 
 class Settings extends React.Component {
@@ -58,7 +58,11 @@ class Settings extends React.Component {
           <Dropwdown name="Solid Colors">
             {this.renderBackgrounds(colors)}
           </Dropwdown>
-          {/* images */}
+          
+          
+          <Dropwdown name="Pictures">
+            {this.renderBackgrounds(images)}
+          </Dropwdown>
         </div>
 
         <button

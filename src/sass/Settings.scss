@@ -60,11 +60,11 @@ $green: rgb(173, 203, 165);
   height: 100px;
   border: black 1px solid;
   margin: 10px auto;
+  background-size: cover !important;
 }
 
 //styles div containing all dropdown-list for background change
 .dropdown-list {
-//   margin-top: 20px;
   height: 105px;
   width: 230px;
   margin: auto;
@@ -102,6 +102,8 @@ $green: rgb(173, 203, 165);
   height: 30px;
   border: rgb(151, 151, 151) 1px solid;
   margin: 5px;
+  background-size: cover !important;
+
 }
 
 //styles button that applies background color
