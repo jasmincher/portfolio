@@ -1,5 +1,6 @@
 import React from "react";
 import "../sass/Mail.scss";
+import axios from "axios";
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -39,15 +40,27 @@ class Mail extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    const inputs = [this.state.name, this.state.email, this.state.message];
 
     if (isFormValid(this.state)) {
       e.target.reset();
       this.setState({ success: ["Email Sent", true] });
       console.log("Form submission successful!");
+
+      //if form fields are filled in correctly then we submit form
+      axios
+        .post("https://formcarry.com/s/UwWRQIV2M4T", inputs, {
+          headers: { Accept: "application/json" }
+        })
+        .then(function(res) {
+          console.log(res);
+        })
+        .catch(function(err) {
+          console.log(err);
+        });
     } else {
       this.setState({ success: ["Fill in all fields", false] });
       console.error("Form submission unsuccessful");
-      //find errors and style them
     }
   };
 
@@ -91,13 +104,7 @@ class Mail extends React.Component {
           {this.state.success[0]}
         </div>
 
-        <form
-          action="https://formspree.io/mvogqlpv"
-          method="POST"
-          onSubmit={this.handleSubmit}
-          className="mail-form"
-          noValidate
-        >
+        <form onSubmit={this.handleSubmit} className="mail-form" noValidate>
           <label>Name</label>
           <input
             className={errors.name.length > 0 ? "error" : null}
@@ -140,6 +147,7 @@ class Mail extends React.Component {
             <div className="field-status">{errors.message}</div>
           )}
 
+          <input type="hidden" name="_gotcha"></input>
           <button type="submit" className="form-btn">
             Submit
           </button>
