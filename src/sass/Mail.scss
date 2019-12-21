@@ -36,6 +36,12 @@ button:focus {
   outline: none !important;
 }
 
+textarea{
+  outline: none;
+  resize: none !important;
+  border: none;
+}
+
 .form-textarea {
   background: $input-background;
   height: 50px;

@@ -137,6 +137,7 @@ class Mail extends React.Component {
                 ? "error form-textarea"
                 : "form-textarea"
             }
+            style={{width: '200px'}}
             type="textarea"
             name="message"
             noValidate
