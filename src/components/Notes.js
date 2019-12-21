@@ -15,7 +15,7 @@ class Notes extends React.Component {
         <p>
           That the AMBER Alert is a backronym for America's missing: Broadcast
           Emergency Response, named after Amber Hagerman, a 9 year old girl who
-          was abducted and murdered in Arlingyon, Texas, in 1996.
+          was abducted and murdered in Arlington, Texas, in 1996.
         </p>
       </div>
     );
