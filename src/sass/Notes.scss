@@ -1,7 +1,9 @@
 
-textarea{
+.notes-container{
     height: 300px;
     width: 200px;
-    border: none;
-    resize: none !important;
+    outline: unset;
+    text-align: left;
+    padding: 10px;
+    overflow: scroll;
 }
