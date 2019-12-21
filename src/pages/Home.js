@@ -10,6 +10,7 @@ import Mail from '../components/Mail';
 import Resume from '../components/Resume';
 import About from '../components/About';
 import { gradients } from "../assets/data/Colors"
+import Navbar from '../components/Navbar';
 
 class Home extends React.Component {
   constructor(props) {
@@ -80,6 +81,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home-container">
+      <Navbar program={this.state.info}/>
         {this.renderWindow()}
 
         <Section icons={Icons} onItemClick={this.showWindow} />
