@@ -6,7 +6,7 @@ function Icon(props) {
 
 
     return (
-        <div id="hello" className="icon-container" onClick={props.onIconClick}>
+        <div className="icon-container" onClick={props.onIconClick}>
             <img src={props.icon} className="icon-img" />
             <p className="icon-title">{props.title}</p>
         </div>
