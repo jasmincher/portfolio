@@ -1,12 +1,12 @@
 .window-container{
     background: white;
-    position: absolute;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
     top: 100px;
-    left: 40%;
-    margin-left: -100px;
+    z-index: 2;
     border-radius: 5px;
     box-shadow: rgba(91, 91, 91, 0.317) 1px 1px 20px;
-    z-index: 2;
 }
 
 .window-container > div {
