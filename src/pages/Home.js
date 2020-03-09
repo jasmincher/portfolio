@@ -41,7 +41,8 @@ class Home extends React.Component {
 
   //hides window
   hideWindow = () => {
-    this.setState({ show: false });
+    this.setState({ show: false, info: null });
+    
   };
 
   //conditionally renders component based on component name in data
