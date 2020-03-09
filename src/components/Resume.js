@@ -1,18 +1,19 @@
 import React from "react";
 import resumePNG from "../assets/documents/Resume.png";
 import ResumePDF from "../assets/documents/Jasmin Hernandez - Resume.pdf";
+import '../sass/Resume.scss'
+
 
 class Resume extends React.Component {
   render() {
     return (
-      <div>
-        <img
+      <div className="resume-container">
+        <img id="resume-img"
           src={resumePNG}
-          style={{ width: "400px", height: "500px", borderRadius: "5px" }}
         />
 
         <a href={ResumePDF} download="JasminHernandez - Resume">
-          <button type="button" style={{bottom: '0',right: '0', position: 'absolute', background: 'unset', border: 'unset'}}>
+          <button type="button" id="download-btn">
             <i className="material-icons" style={{fontSize: '24px'}}>save_alt</i>
           </button>
         </a>
