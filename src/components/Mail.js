@@ -48,8 +48,9 @@ class Mail extends React.Component {
       console.log("Form submission successful!");
 
       //if form fields are filled in correctly then we submit form
+
       axios
-        .post("https://formcarry.com/s/UwWRQIV2M4T", inputs, {
+        .post("https://smartforms.dev/submit/5e65dd7087741358fac95966", inputs, {
           headers: { Accept: "application/json" }
         })
         .then(function(res) {
