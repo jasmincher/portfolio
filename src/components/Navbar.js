@@ -12,11 +12,11 @@ class Navbar extends React.Component {
    
     return (
       <div className="nav-container" style={{display: 'flex'}}>
-          <i className="material-icons" style={{ fontSize: '1.3rem', alignSelf: 'center'}}>
+          <i className="material-icons home-icon" style={{ fontSize: '1.3rem', alignSelf: 'center'}}>
             home
           </i>
 
-        <p style={{marginTop: '4px', marginLeft: '10px', fontWeight: '450'}}>{this.props.program}</p>
+        <p className="program-name">{this.props.program}</p>
       
         <Clock
           alignSelf="center"

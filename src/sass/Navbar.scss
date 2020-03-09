@@ -19,3 +19,16 @@ a:hover{
     color: black !important;
     text-decoration: none !important;
 }
+
+.program-name{
+    margin-top: 4px; 
+    margin-left: 10px;
+    font-weight: 450;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .program-name{
+        margin-top: 5px; 
+    }
+}
