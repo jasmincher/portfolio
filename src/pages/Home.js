@@ -83,7 +83,10 @@ class Home extends React.Component {
     return (
       <div className="home-container">
       <Navbar program={this.state.info}/>
+
+        <div style={{height: "95vh", width: "100%", position: "relative"}}>
         {this.renderWindow()}
+        </div>
 
         <Section icons={Icons} onItemClick={this.showWindow} />
       </div>
