@@ -69,7 +69,7 @@ class Settings extends React.Component {
           className="apply-btn"
           onClick={() => this.changeBackground()}
         >
-          Apply Color
+          Apply Background
         </button>
       </div>
     );
