@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9b2e655f.chunk.css",
+    "main.css": "/portfolio/static/css/main.41ade998.chunk.css",
     "main.js": "/portfolio/static/js/main.4b013f4e.chunk.js",
     "main.js.map": "/portfolio/static/js/main.4b013f4e.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.4fc83baf.js",
@@ -9,10 +9,10 @@
     "static/js/2.14c45877.chunk.js": "/portfolio/static/js/2.14c45877.chunk.js",
     "static/js/2.14c45877.chunk.js.map": "/portfolio/static/js/2.14c45877.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.38005796cce15c26dc2e36cc644fc4b5.js": "/portfolio/precache-manifest.38005796cce15c26dc2e36cc644fc4b5.js",
+    "precache-manifest.96e77e004cf3d77f799bb298f532da8b.js": "/portfolio/precache-manifest.96e77e004cf3d77f799bb298f532da8b.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.97089d65.chunk.css.map": "/portfolio/static/css/2.97089d65.chunk.css.map",
-    "static/css/main.9b2e655f.chunk.css.map": "/portfolio/static/css/main.9b2e655f.chunk.css.map",
+    "static/css/main.41ade998.chunk.css.map": "/portfolio/static/css/main.41ade998.chunk.css.map",
     "static/media/About.jpeg": "/portfolio/static/media/About.afdc7112.jpeg",
     "static/media/Jasmin Hernandez - Resume.pdf": "/portfolio/static/media/Jasmin Hernandez - Resume.2e725282.pdf",
     "static/media/Resume.png": "/portfolio/static/media/Resume.aab7ad6b.png"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.4fc83baf.js",
     "static/css/2.97089d65.chunk.css",
     "static/js/2.14c45877.chunk.js",
-    "static/css/main.9b2e655f.chunk.css",
+    "static/css/main.41ade998.chunk.css",
     "static/js/main.4b013f4e.chunk.js"
   ]
 }
