@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea60bed1d87b96bd6d3749178745c47b",
+    "revision": "0194b2a096fb087d6186da596e18ec4f",
     "url": "/portfolio/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/css/2.97089d65.chunk.css"
   },
   {
-    "revision": "e2a2aea8328d65732c0d",
-    "url": "/portfolio/static/css/main.c7415811.chunk.css"
+    "revision": "8e333c4f853195f44155",
+    "url": "/portfolio/static/css/main.9b2e655f.chunk.css"
   },
   {
     "revision": "d4c6fef95383b240feac",
     "url": "/portfolio/static/js/2.14c45877.chunk.js"
   },
   {
-    "revision": "e2a2aea8328d65732c0d",
-    "url": "/portfolio/static/js/main.cdf8fb52.chunk.js"
+    "revision": "8e333c4f853195f44155",
+    "url": "/portfolio/static/js/main.4b013f4e.chunk.js"
   },
   {
     "revision": "6043226c40dcb0adf1d9",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/Jasmin Hernandez - Resume.2e725282.pdf"
   },
   {
-    "revision": "e005dae1c8754edfd4976b7cf5b04391",
-    "url": "/portfolio/static/media/Resume.e005dae1.png"
+    "revision": "aab7ad6bbfca78a5cba81a40cfeed6b9",
+    "url": "/portfolio/static/media/Resume.aab7ad6b.png"
   }
 ]);
