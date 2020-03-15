@@ -9,8 +9,6 @@ class Notes extends React.Component {
         contentEditable="true"
         spellcheck="false"
       >
-        <p>Write down any notes here...</p>
-
         <p>Did you know? </p>
         <p>
           That the AMBER Alert is a backronym for America's missing: Broadcast
