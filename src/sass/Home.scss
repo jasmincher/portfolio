@@ -1,5 +1,5 @@
 //color variables
-$red: rgb(194, 78, 78);
+$red: #FE6158;
 $color: rgb(201, 201, 201);
 
 //stles home page container
@@ -20,13 +20,14 @@ $color: rgb(201, 201, 201);
 //styles close button
 .close-btn{
     cursor: pointer;
+    padding: 1px;
     position: absolute !important;
-    top: 7px !important;
+    top: 6px !important;
     left: 8px;
     border-radius: 100px;
     background: $red;    
     color: $red;
-    font-size: 12px !important;
+    font-size: 11px !important;
   
 }
 
