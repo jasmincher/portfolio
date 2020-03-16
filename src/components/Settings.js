@@ -33,12 +33,13 @@ class Settings extends React.Component {
   renderBackgrounds = backgrounds => {
     return backgrounds.map(i => (
       <div
-        style={{ background: i.color }}
-        onClick={() => this.changeColor(i.color)}
+      style={{ background: i.color}}
+      onClick={() => this.changeColor(i.color)}
       ></div>
     ));
   };
 
+  
   render() {
     return (
       <div className="settings-container">

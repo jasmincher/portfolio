@@ -27,10 +27,13 @@ class Dropwdown extends Component {
     return (
       <div className="dropdown-item">
         {/* onclick changes the direction of the arrow */}
-        <div onClick={this.toggleOptions}>
-          {name}
-          <i className="material-icons"> {arrow} </i>
-        </div>
+        {/* <a style={{all: 'unset'}} onClick={() => document.getElementById(name).scrollIntoView()}> */}
+          <div onClick={this.toggleOptions} id={name}>
+            {name}
+
+            <i className="material-icons"> {arrow} </i>
+          </div>
+        {/* </a> */}
         <div className="background-options" style={{ display }}>
           {children}
         </div>
