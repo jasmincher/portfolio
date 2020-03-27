@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.41ade998.chunk.css",
-    "main.js": "/portfolio/static/js/main.eea7c150.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.eea7c150.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.4fc83baf.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.4fc83baf.js.map",
-    "static/css/2.97089d65.chunk.css": "/portfolio/static/css/2.97089d65.chunk.css",
-    "static/js/2.14c45877.chunk.js": "/portfolio/static/js/2.14c45877.chunk.js",
-    "static/js/2.14c45877.chunk.js.map": "/portfolio/static/js/2.14c45877.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.cbd948d6a68700cb4547bb837bee6453.js": "/portfolio/precache-manifest.cbd948d6a68700cb4547bb837bee6453.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/2.97089d65.chunk.css.map": "/portfolio/static/css/2.97089d65.chunk.css.map",
-    "static/css/main.41ade998.chunk.css.map": "/portfolio/static/css/main.41ade998.chunk.css.map",
-    "static/media/About.jpeg": "/portfolio/static/media/About.afdc7112.jpeg",
-    "static/media/Jasmin Hernandez - Resume.pdf": "/portfolio/static/media/Jasmin Hernandez - Resume.2e725282.pdf",
-    "static/media/Resume.png": "/portfolio/static/media/Resume.aab7ad6b.png"
+    "main.css": "/static/css/main.41ade998.chunk.css",
+    "main.js": "/static/js/main.631eb432.chunk.js",
+    "main.js.map": "/static/js/main.631eb432.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.33611d63.js",
+    "runtime-main.js.map": "/static/js/runtime-main.33611d63.js.map",
+    "static/css/2.97089d65.chunk.css": "/static/css/2.97089d65.chunk.css",
+    "static/js/2.3a8ec87f.chunk.js": "/static/js/2.3a8ec87f.chunk.js",
+    "static/js/2.3a8ec87f.chunk.js.map": "/static/js/2.3a8ec87f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.453def981092475221a72d8ae39c0d39.js": "/precache-manifest.453def981092475221a72d8ae39c0d39.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.97089d65.chunk.css.map": "/static/css/2.97089d65.chunk.css.map",
+    "static/css/main.41ade998.chunk.css.map": "/static/css/main.41ade998.chunk.css.map",
+    "static/media/About.jpeg": "/static/media/About.afdc7112.jpeg",
+    "static/media/Jasmin Hernandez - Resume.pdf": "/static/media/Jasmin Hernandez - Resume.2e725282.pdf",
+    "static/media/Resume.png": "/static/media/Resume.aab7ad6b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4fc83baf.js",
+    "static/js/runtime-main.33611d63.js",
     "static/css/2.97089d65.chunk.css",
-    "static/js/2.14c45877.chunk.js",
+    "static/js/2.3a8ec87f.chunk.js",
     "static/css/main.41ade998.chunk.css",
-    "static/js/main.eea7c150.chunk.js"
+    "static/js/main.631eb432.chunk.js"
   ]
 }
