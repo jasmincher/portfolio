@@ -1,8 +1,8 @@
 export const Links = 
 [
     {
-        projectName: "Must Watch TV Shows and Movies",
-        href: "https://topmoviesandshows.herokuapp.com/"
+        projectName: "The Best Movies and Shows",
+        href: "https://watch-it.now.sh/"
 
     },
 
