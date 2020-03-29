@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8936cd004f8905192bb0eccec481cc84",
+    "revision": "5d8cff7560838860c3e86d64ebd8ad79",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.97089d65.chunk.css"
   },
   {
-    "revision": "7bdebbb3b6f447dc570b",
+    "revision": "4c2ae3d731267cdb0b22",
     "url": "/static/css/main.41ade998.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.3a8ec87f.chunk.js"
   },
   {
-    "revision": "7bdebbb3b6f447dc570b",
-    "url": "/static/js/main.db54ca46.chunk.js"
+    "revision": "4c2ae3d731267cdb0b22",
+    "url": "/static/js/main.0e20a49b.chunk.js"
   },
   {
     "revision": "a0fb235a6af033195f09",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Jasmin Hernandez - Resume.2e725282.pdf"
   },
   {
-    "revision": "aab7ad6bbfca78a5cba81a40cfeed6b9",
-    "url": "/static/media/Resume.aab7ad6b.png"
+    "revision": "b56abde58d6b40d5eaef37e271f95be4",
+    "url": "/static/media/Resume.b56abde5.png"
   }
 ]);
