@@ -20,7 +20,7 @@ export const Links =
 
     {
         projectName: "SeeMe",
-        href: "https://seeme-tch.herokuapp.com/"
+        href: "https://see-me.now.sh/"
 
     },
 
