@@ -26,7 +26,7 @@ export const Links =
 
     {
         projectName: "Meetup Connect",
-        href: "https://jasmincher.github.io/meetup-connect/"
+        href: "https://meetup-connect.now.sh/"
 
     },
 
