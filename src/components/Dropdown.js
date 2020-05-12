@@ -5,7 +5,7 @@ class Dropwdown extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
 
     this.toggleOptions = this.toggleOptions.bind(this);
@@ -14,7 +14,7 @@ class Dropwdown extends Component {
   //changes previous state to true or false
   toggleOptions() {
     this.setState(({ isOpen }) => ({
-      isOpen: !isOpen
+      isOpen: !isOpen,
     }));
   }
 
@@ -27,16 +27,16 @@ class Dropwdown extends Component {
     return (
       <div className="dropdown-item">
         {/* onclick changes the direction of the arrow */}
-        {/* <a style={{all: 'unset'}} onClick={() => document.getElementById(name).scrollIntoView()}> */}
-          <div onClick={this.toggleOptions} id={name}>
-            {name}
+        <div onClick={this.toggleOptions}>
+          {name}
 
-            <i className="material-icons"> {arrow} </i>
-          </div>
-        {/* </a> */}
+          <i className="material-icons" style={{top: "5px"}}> {arrow} </i>
+        </div>
+
         <div className="background-options" style={{ display }}>
           {children}
         </div>
+        
       </div>
     );
   }
