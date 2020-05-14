@@ -1,76 +1,35 @@
-.resume-container{
-    height: 90vh;
-    overflow: scroll;
+.resume-container {
+  overflow: scroll;
 }
 
-#download-btn{
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    background: unset;
-    border: unset;
+#download-btn {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: unset;
+  border: unset;
 }
 
-#resume-img{
-    width: 100vh;
+.resume-container a {
+  padding: 0;
 }
 
-
-.resume-container a{
-    padding: 0;
+// ********** Responsive Styles **********
+/* viewport 4 : Mobile-landscape (and larger) */
+@media (min-width: 480px) {
 }
 
-//responsive styles
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
-    .resume-container{
-        width: 350px;
-        height: 440px;
-        overflow: scroll;
-    }
-
-    #resume-img{
-        width: 100%;
-    }
+/* viewport 7 : Tablet-portrait (and larger) */
+@media (min-width: 768px) {
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    .resume-container{
-        width: 540px;
-        height: 690px;
-        overflow: scroll;
-    }
-
-    #resume-img{
-        width: 100%;
-    }
+/* viewport 9 : Table-landscape (and larger) */
+@media (min-width: 992px) {
+        .resume-container {
+          height: 80vh;
+        }
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    .resume-container{
-        width: 730px;
-        height: 880px;
-        overflow: scroll;
-    }
-
-    #resume-img{
-        width: 100%;
-    }
+/* viewport 12 : Laptops (and larger)  */
+@media (min-width: 1200px) {
 }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .resume-container{
-        width: 900px;
-        height: 1100px;
-        overflow: scroll;
-    }
-
-    #resume-img{
-        width: 100%;
-    }
-}
-
