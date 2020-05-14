@@ -46,7 +46,7 @@ class Resume extends React.Component {
           loading="Loading Resume..."
           externalLinkTarget="_blank"
           >
-          <Page pageNumber={pageNumber} width={this.state.resize} className="pdf" />
+          <Page pageNumber={pageNumber} width={this.state.resize} />
         </Document>
 
         <a href={ResumePDF} download="JasminHernandez - Resume">
