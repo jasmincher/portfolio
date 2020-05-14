@@ -45,6 +45,7 @@ class Resume extends React.Component {
           file={ResumePDF}
           loading="Loading Resume..."
           externalLinkTarget="_blank"
+          className="pdf"
         >
           <Page pageNumber={pageNumber} width={this.state.resize} />
         </Document>
