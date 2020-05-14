@@ -79,6 +79,11 @@ class Home extends React.Component {
     }
   };
 
+
+
+
+
+
   render() {
     return (
       <div className="home-container">
@@ -87,7 +92,6 @@ class Home extends React.Component {
         <div style={{height: "95vh", width: "100%", position: "relative"}}>
         {this.renderWindow()}
         </div>
-
         <Section icons={Icons} onItemClick={this.showWindow} />
       </div>
     );
