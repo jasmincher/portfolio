@@ -1,27 +1,41 @@
-.window-container{
-    background: white;
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-    top: 100px;
-    z-index: 2;
-    border-radius: 5px;
-    box-shadow: rgba(91, 91, 91, 0.317) 1px 1px 20px;
+.window-container {
+  background: white;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  top: 100px;
+  z-index: 2;
+  border-radius: 5px;
+  box-shadow: rgba(91, 91, 91, 0.317) 1px 1px 20px;
 }
 
 .window-container > div {
-   border-radius: 5px;
+  border-radius: 5px;
 }
 
-#Resume{
-    top: 0;
+#Resume {
+  top: 60px;
 }
 
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
-    #Resume{
-        top: 85px;
-    }
+// ********** Responsive Styles **********
+/* viewport 4 : Mobile-landscape (and larger) */
+@media (min-width: 480px) {
+  #Resume {
+    top: 45px;
+  }
 }
 
+/* viewport 7 : Tablet-portrait (and larger) */
+@media (min-width: 768px) {
+  #Resume {
+    top: 20px;
+  }
+}
+
+/* viewport 9 : Table-landscape (and larger) */
+@media (min-width: 992px) {
+}
+
+/* viewport 12 : Laptops (and larger)  */
+@media (min-width: 1200px) {
+}
