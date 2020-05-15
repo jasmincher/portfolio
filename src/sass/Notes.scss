@@ -1,15 +1,25 @@
 
 .notes-container{
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     outline: unset;
-    text-align: left;
-    padding: 10px;
-    overflow: scroll;
+    text-align: left;    
+    overflow-y: scroll;
 }
-
-
 
 #notepad{
     height: inherit;
+    width: inherit;
+    padding: 10px;
 }
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.notes-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE and Edge */
+  .notes-container {
+    -ms-overflow-style: none;
+  }
