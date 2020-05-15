@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.b74ae0bc.chunk.css",
-    "main.js": "/static/js/main.949a68ae.chunk.js",
-    "main.js.map": "/static/js/main.949a68ae.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.33611d63.js",
-    "runtime-main.js.map": "/static/js/runtime-main.33611d63.js.map",
-    "static/css/2.fe1dd3bb.chunk.css": "/static/css/2.fe1dd3bb.chunk.css",
-    "static/js/2.badd7469.chunk.js": "/static/js/2.badd7469.chunk.js",
-    "static/js/2.badd7469.chunk.js.map": "/static/js/2.badd7469.chunk.js.map",
-    "c605d34eaf9e16b750a0.worker.js": "/c605d34eaf9e16b750a0.worker.js",
-    "c605d34eaf9e16b750a0.worker.js.map": "/c605d34eaf9e16b750a0.worker.js.map",
+    "main.css": "/static/css/main.0bb73158.chunk.css",
+    "main.js": "/static/js/main.08c629a4.chunk.js",
+    "main.js.map": "/static/js/main.08c629a4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7e4b9196.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7e4b9196.js.map",
+    "static/css/2.a7cd63a6.chunk.css": "/static/css/2.a7cd63a6.chunk.css",
+    "static/js/2.b0cd4eba.chunk.js": "/static/js/2.b0cd4eba.chunk.js",
+    "static/js/2.b0cd4eba.chunk.js.map": "/static/js/2.b0cd4eba.chunk.js.map",
+    "fd50e466d135a8eb7543.worker.js": "/fd50e466d135a8eb7543.worker.js",
+    "fd50e466d135a8eb7543.worker.js.LICENSE.txt": "/fd50e466d135a8eb7543.worker.js.LICENSE.txt",
+    "fd50e466d135a8eb7543.worker.js.map": "/fd50e466d135a8eb7543.worker.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b5c33d5a451af3009a5535b55a0e1d5d.js": "/precache-manifest.b5c33d5a451af3009a5535b55a0e1d5d.js",
+    "precache-manifest.6e861b8c76fc326b861f73845264891a.js": "/precache-manifest.6e861b8c76fc326b861f73845264891a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.fe1dd3bb.chunk.css.map": "/static/css/2.fe1dd3bb.chunk.css.map",
-    "static/css/main.b74ae0bc.chunk.css.map": "/static/css/main.b74ae0bc.chunk.css.map",
+    "static/css/2.a7cd63a6.chunk.css.map": "/static/css/2.a7cd63a6.chunk.css.map",
+    "static/css/main.0bb73158.chunk.css.map": "/static/css/main.0bb73158.chunk.css.map",
+    "static/js/2.b0cd4eba.chunk.js.LICENSE.txt": "/static/js/2.b0cd4eba.chunk.js.LICENSE.txt",
     "static/media/About.jpeg": "/static/media/About.afdc7112.jpeg",
     "static/media/Jasmin Hernandez - Resume.pdf": "/static/media/Jasmin Hernandez - Resume.2e725282.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.33611d63.js",
-    "static/css/2.fe1dd3bb.chunk.css",
-    "static/js/2.badd7469.chunk.js",
-    "static/css/main.b74ae0bc.chunk.css",
-    "static/js/main.949a68ae.chunk.js"
+    "static/js/runtime-main.7e4b9196.js",
+    "static/css/2.a7cd63a6.chunk.css",
+    "static/js/2.b0cd4eba.chunk.js",
+    "static/css/main.0bb73158.chunk.css",
+    "static/js/main.08c629a4.chunk.js"
   ]
 }
