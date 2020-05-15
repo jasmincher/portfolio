@@ -7,7 +7,7 @@ class Window extends React.Component {
     
     return (
       //handles where to drag component
-      <Draggable handle={this.props.handle} bounds="parent">
+      <Draggable handle={this.props.handle} bounds="parent" cancel={this.props.cancel}>
         <div className="window-container" id={this.props.ID}>{this.props.children}</div>
       </Draggable>
     );
