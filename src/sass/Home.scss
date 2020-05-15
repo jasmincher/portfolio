@@ -1,41 +1,43 @@
 //color variables
-$red: #FE6158;
+$red: #fe6158;
 $color: rgb(201, 201, 201);
 
 //stles home page container
-.home-container{
-    height: 100%;
-    width: 100%;
-    position: fixed;
+.home-container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
 
 //styles div containing only the close button
-.close-btn-container{
-    background: rgb(226, 229, 235);
-    height: 25px;
-    border: {
-        bottom-left-radius: 0px !important;
-        bottom-right-radius: 0px !important;
-    }
+.close-btn-container {
+  background: rgb(226, 229, 235);
+  height: 25px;
+  border: {
+    bottom-left-radius: 0px !important;
+    bottom-right-radius: 0px !important;
+  }
 }
 
 //styles close button
-.close-btn{
-    cursor: pointer;
-    padding: 1px;
-    position: absolute !important;
-    top: 6px !important;
-    left: 8px;
-    border-radius: 100px;
-    background: $red;    
-    color: $red;
-    font-size: 11px !important;
-  
+.close-btn {
+  cursor: pointer;
+  padding: 1px;
+  position: absolute !important;
+  top: 6px !important;
+  left: 8px;
+  border-radius: 100px;
+  background: $red;
+  color: $red;
+  font-size: 11px !important;
 }
 
 //styles close button when you hover over it
-.close-btn:hover{
-    color:black;
+.close-btn:hover {
+  color: black;
 }
 
-
+.close-btn-handle {
+  width: 50px;
+  height: 25px;  
+}
