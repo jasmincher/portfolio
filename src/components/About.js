@@ -1,23 +1,15 @@
 import React from "react";
 import about from "../assets/images/About.jpeg";
+import '../sass/About.scss'
+
 
 class About extends React.Component {
   render() {
     return (
-      <div
-        style={{
-          padding: "10px",
-          overflow: "scroll",
-          width: "330px",
-          height: "280px"
-        }}
-      >
+      <div className="about-container">
         <h6>Hi, I'm Jas!</h6>
 
-        <img
-          src={about}
-          style={{ width: "100px", borderRadius: "100px", margin: "10px" }}
-        />
+        <img src={about}/>
 
         <p>
           I'm currently a senior studying computer science. My passions lie in
