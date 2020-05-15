@@ -67,11 +67,17 @@ class Home extends React.Component {
   renderWindow = () => {
     if (this.state.show === true) {
       return (
-        <Window handle=".close-btn-container" ID={this.state.info} cancel=".close-btn">
+        <Window handle=".close-btn-container" ID={this.state.info} cancel=".close-btn-handle">
           <div className="close-btn-container">
-            <i className="material-icons close-btn" onClick={this.hideWindow}>
+           
+           <div className="close-btn-handle" onClick={this.hideWindow}>
+
+            <i className="material-icons close-btn" 
+            // onClick={this.hideWindow}
+            >
               close
             </i>
+           </div>
           </div>
           {this.renderComponent()}
         </Window>
