@@ -1,9 +1,10 @@
-import notes from '../images/Text 2.png';
-import folder from '../images/Folder.png';
-import email from '../images/Message.png';
-import about from '../images/User.png';
-import settings from '../images/Settings.png'
-import resume from '../images/Documents.png';
+import notes from "../images/edit.svg";
+import folder from "../images/folder-open.svg";
+import email from "../images/mail.svg";
+import about from "../images/account.svg";
+import settings from "../images/settings.svg";
+import resume from "../images/document.svg";
+
 
 export const Icons = 
 [
