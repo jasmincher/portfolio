@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.5721eb63.chunk.css",
-    "main.js": "/static/js/main.003c428a.chunk.js",
-    "main.js.map": "/static/js/main.003c428a.chunk.js.map",
+    "main.css": "/static/css/main.bef51325.chunk.css",
+    "main.js": "/static/js/main.9e0f837a.chunk.js",
+    "main.js.map": "/static/js/main.9e0f837a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7e4b9196.js",
     "runtime-main.js.map": "/static/js/runtime-main.7e4b9196.js.map",
     "static/css/2.a7cd63a6.chunk.css": "/static/css/2.a7cd63a6.chunk.css",
@@ -12,19 +12,25 @@
     "fd50e466d135a8eb7543.worker.js.LICENSE.txt": "/fd50e466d135a8eb7543.worker.js.LICENSE.txt",
     "fd50e466d135a8eb7543.worker.js.map": "/fd50e466d135a8eb7543.worker.js.map",
     "index.html": "/index.html",
-    "precache-manifest.24bea1436d5c69477e64f4fc1ee543b0.js": "/precache-manifest.24bea1436d5c69477e64f4fc1ee543b0.js",
+    "precache-manifest.c0167995be944f1e99adc2b5803466fd.js": "/precache-manifest.c0167995be944f1e99adc2b5803466fd.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.a7cd63a6.chunk.css.map": "/static/css/2.a7cd63a6.chunk.css.map",
-    "static/css/main.5721eb63.chunk.css.map": "/static/css/main.5721eb63.chunk.css.map",
+    "static/css/main.bef51325.chunk.css.map": "/static/css/main.bef51325.chunk.css.map",
     "static/js/2.b0cd4eba.chunk.js.LICENSE.txt": "/static/js/2.b0cd4eba.chunk.js.LICENSE.txt",
     "static/media/About.jpeg": "/static/media/About.afdc7112.jpeg",
-    "static/media/Jasmin Hernandez - Resume.pdf": "/static/media/Jasmin Hernandez - Resume.2e725282.pdf"
+    "static/media/Jasmin Hernandez - Resume.pdf": "/static/media/Jasmin Hernandez - Resume.2e725282.pdf",
+    "static/media/account.svg": "/static/media/account.53ccdcfc.svg",
+    "static/media/document.svg": "/static/media/document.825e2a94.svg",
+    "static/media/edit.svg": "/static/media/edit.8714f230.svg",
+    "static/media/folder-open.svg": "/static/media/folder-open.2e887131.svg",
+    "static/media/mail.svg": "/static/media/mail.2ff3b2ae.svg",
+    "static/media/settings.svg": "/static/media/settings.2bebc599.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7e4b9196.js",
     "static/css/2.a7cd63a6.chunk.css",
     "static/js/2.b0cd4eba.chunk.js",
-    "static/css/main.5721eb63.chunk.css",
-    "static/js/main.003c428a.chunk.js"
+    "static/css/main.bef51325.chunk.css",
+    "static/js/main.9e0f837a.chunk.js"
   ]
 }
