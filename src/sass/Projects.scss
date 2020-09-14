@@ -1,3 +1,66 @@
+// .projects-container {
+//   background: white;
+//   width: 300px;
+//   height: 200px;
+//   overflow: scroll;
+//   text-align: left;
+// }
+
+// .with-preview-pane {
+//   background: white;
+//   width: 300px;
+//   height: 200px;
+//   overflow: scroll;
+//   text-align: left;
+//   display: grid;
+//   grid-template-columns: 60% 40%;
+
+// }
+
+// .project-name{
+//   display: flex;
+// }
+
+// .project-name > div{
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   overflow: hidden;
+// }
+
+// .projects-list{
+//   overflow: scroll;
+
+// }
+
+// .pane {
+//   width: 40%;
+//   height: 200px;
+//   right: 0;
+//   position: fixed;
+//   border-left: 1px solid rgba(128, 128, 128, 0.39);
+// }
+
+// .hidden-pane {
+//   display: none;
+// }
+
+
+// .window-container .projects-container {
+//   border-top-left-radius: 0;
+//   border-top-right-radius: 0;
+// }
+
+// //styles file details such as name
+// .file-details {
+//   border: 1px solid rgb(215, 215, 215);
+//   height: 24px;
+//   margin-bottom: 5px;
+// }
+
+// .file-details h6 {
+//   padding-left: 5px;
+// }
+
 .projects-container {
   background: white;
   width: 300px;
@@ -31,4 +94,3 @@ ul {
 .file-details h6 {
   padding-left: 5px;
 }
-
