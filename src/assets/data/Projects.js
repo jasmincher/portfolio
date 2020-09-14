@@ -7,7 +7,7 @@ export const Links =
 
     {
         projectName: "Open Source Portfolio Template",
-        href: "portfolio-template-liard.vercel.app/",
+        href: "https://portfolio-template-liard.vercel.app/",
     },
 
     {
