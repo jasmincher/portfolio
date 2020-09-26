@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fd50e466d135a8eb7543.worker.js.LICENSE.txt"
   },
   {
-    "revision": "6ad570722b4eb589fbb8adde30f8d680",
+    "revision": "36effc7d8af16b31e66cc2c347fbbd5f",
     "url": "/index.html"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.a7cd63a6.chunk.css"
   },
   {
-    "revision": "35e6744f5be0a79b8317",
+    "revision": "9a566d5312d6dd05529f",
     "url": "/static/css/main.7dc8c307.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.d15e1355.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "35e6744f5be0a79b8317",
-    "url": "/static/js/main.98d15aa1.chunk.js"
+    "revision": "9a566d5312d6dd05529f",
+    "url": "/static/js/main.79d99de1.chunk.js"
   },
   {
     "revision": "967a46d8b67e4e01db1f",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/About.afdc7112.jpeg"
   },
   {
-    "revision": "a026a1a472e4b1c1abf54cd70681a983",
-    "url": "/static/media/Jasmin Hernandez - Resume.a026a1a4.pdf"
+    "revision": "9613c94eb1ee8ef6c245aa4c41537c3f",
+    "url": "/static/media/Jasmin Hernandez - Resume.9613c94e.pdf"
   },
   {
     "revision": "53ccdcfc55834053d379b5aa30e9ba85",
