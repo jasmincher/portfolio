@@ -9,23 +9,23 @@ import Settings from '../components/Settings';
 import Mail from '../components/Mail';
 import Resume from '../components/Resume';
 import About from '../components/About';
-import { gradients } from "../assets/data/Colors"
+import { images } from "../assets/data/Colors"
 import Navbar from '../components/Navbar';
 
 class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false,
-      info: null,
+      show: true,
+      info: "About",
       color: ''
     };
   }
-
-
-//sets background for home page
+  
+  
+  //sets background for home page
   componentDidMount(){
-    const color = localStorage.getItem('color') || gradients[0].color;
+    const color = localStorage.getItem('color') || images[7].color;
     this.setState({color})
     document.body.style.background = color;
   }
@@ -35,14 +35,13 @@ class Home extends React.Component {
   showWindow = data => {
     this.setState({
       show: true,
-      info: data.component
+      info: data.component,
     });
   };
 
   //hides window
   hideWindow = () => {
-    this.setState({ show: false, info: null });
-    
+    this.setState({ show: false, info: null });  
   };
 
   //conditionally renders component based on component name in data

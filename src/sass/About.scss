@@ -7,17 +7,22 @@
 
 .about-container img{
     width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: 50% 45%;
     border-radius: 100px;
     margin: 10px;
+
 }
 
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.about-container::-webkit-scrollbar {
-    display: none;
-  }
+// /* Hide scrollbar for Chrome, Safari and Opera */
+// .about-container::-webkit-scrollbar {
+//     display: none;
+
+//   }
   
-  /* Hide scrollbar for IE and Edge */
-  .about-container {
-    -ms-overflow-style: none;
-  }
+//   /* Hide scrollbar for IE and Edge */
+//   .about-container {
+//     -ms-overflow-style: none;
+//   }
