@@ -13,7 +13,7 @@ class Settings extends React.Component {
 
   //sets color for preview window
   componentDidMount() {
-    const color = localStorage.getItem("color") || gradients[0].color;
+    const color = localStorage.getItem("color") || images[7].color;
     this.setState({ color });
   }
 
