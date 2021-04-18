@@ -20,8 +20,7 @@ class Home extends React.Component {
       info: "About",
       color: ''
     };
-  }
-  
+  } 
   
   //sets background for home page
   componentDidMount(){
