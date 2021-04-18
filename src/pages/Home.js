@@ -72,7 +72,6 @@ class Home extends React.Component {
            <div className="close-btn-handle" onClick={this.hideWindow}>
 
             <i className="material-icons close-btn" 
-            // onClick={this.hideWindow}
             >
               close
             </i>
