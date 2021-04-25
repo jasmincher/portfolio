@@ -23,9 +23,9 @@ That the AMBER Alert is a backronym for America's missing: Broadcast Emergency R
   
   render() {
     return (
-      <div className="notes-container" spellCheck="false">
-        <textarea id="notepad" onChange={() => this.changeNotes()}></textarea>
-      </div>
+      // <div className="notes-container" spellCheck="false">
+        <textarea id="notepad" spellCheck="false" onChange={() => this.changeNotes()}></textarea>
+      // </div>
     );
   }
 }

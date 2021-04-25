@@ -1,16 +1,19 @@
 
-.notes-container{
+// .notes-container{
+//     height: 250px;
+//     width: 250px;
+//     outline: unset;
+//     text-align: left;    
+//     overflow-y: scroll;
+// }
+
+#notepad{
+    padding: 10px;
     height: 250px;
     width: 250px;
     outline: unset;
     text-align: left;    
     overflow-y: scroll;
-}
-
-#notepad{
-    height: inherit;
-    width: inherit;
-    padding: 10px;
 }
 
 

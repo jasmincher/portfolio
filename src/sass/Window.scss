@@ -4,13 +4,29 @@
   display: inline-block;
   margin: 0 auto;
   top: 100px;
-  z-index: 2;
   border-radius: 5px;
   box-shadow: rgba(91, 91, 91, 0.317) 1px 1px 20px;
+  z-index: 10;
+  // resize: both;
+  // overflow: auto;
 }
 
 .window-container > div {
   border-radius: 5px;
+ 
+}
+
+.window-container .about-container{
+  resize: both;
+  overflow: auto;
+}
+
+
+.window-container  textarea#notepad{
+  resize: both !important;
+  border-radius: 5px;
+  vertical-align: top;
+ 
 }
 
 #Resume {
